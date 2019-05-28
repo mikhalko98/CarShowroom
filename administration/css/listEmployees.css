@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to left, #A0A0A0, #0000A0);
+}
+h3{
+    text-align: center;
+}
+.list_employees p{
+    color: rgba(0,0,0, 1);
+}
+.list_employees table{
+    background: black;
+}
+.list_employees td, th{
+    background: cornflowerblue;
+
+}
+

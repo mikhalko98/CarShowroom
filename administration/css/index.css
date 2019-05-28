@@ -1,0 +1,71 @@
+body{
+    background-size: cover;
+    background: cadetblue url("../../images/first.jpg") fixed center center no-repeat;
+    background-size: cover;
+    color: black;
+    text-align: left;
+}
+h1{
+    text-align: center;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+}
+A{
+    color: cornsilk;
+    border: 3px solid red;
+    background-color: black;
+    padding: 5px;
+}
+.right_images1 img{
+    height: 150px;
+    position: absolute;
+    right: 10px;
+}
+P{
+    border: 1px solid dodgerblue;
+    background-color: orange;
+    padding: 1px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.text_right_car1{
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    color: cornsilk;
+}
+.left_images1 img{
+    height: 120px;
+    position: absolute;
+    left: 10px;
+    top:320px;
+}
+.text_left_car1{
+    position: absolute;
+    right: 100px;
+    top: 300px;
+    color: cornsilk;
+}
+.right_images2 img{
+    height: 150px;
+    position: absolute;
+    top: 500px;
+    right: 10px;
+}
+.text_right_car2{
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    color: cornsilk;
+}
+.left_images2 img{
+    height: 200px;
+    position: absolute;
+    left: 10px;
+    top: 700px;
+}
+.text_left_car2{
+    position: absolute;
+    right: 100px;
+    top: 700px;
+    color: cornsilk;
+}
