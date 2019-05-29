@@ -36,7 +36,7 @@ class Customers
             if ($sth->execute($data))
                 return true;
             else return false;
-        } else{
+        } else {
             echo "This is already there</br>";
             return true;
         }

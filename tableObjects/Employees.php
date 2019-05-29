@@ -13,7 +13,7 @@ class Employees
         $this->DB_CarShowroom = $this->DB_CarShowroom->getdbh();
     }
 
-    // получаю массив который содержит все имеющиеся посады в базе даннызх
+    // get an array that contains all available posad in the database
     public function getPositions()
     {
         $sql = "SELECT name FROM positions";
@@ -22,7 +22,7 @@ class Employees
         return $positions = $sth->fetchAll();
     }
 
-    //получаю название посады по id
+    //get the name of the posada by id
     public function getNamePosition($id)
     {
         $sql = "SELECT name FROM positions WHERE id = ?";
@@ -32,7 +32,7 @@ class Employees
         return $position["name"];
     }
 
-    //проверяю наявность работника в базе по его email And telephone
+    //check the worker's obviousness in the database by his e-mail And telephone
     private function checkAvailability($_post)
     {
         $sql = "SELECT id FROM employees WHERE email = ? OR telephone = ?";
@@ -42,7 +42,7 @@ class Employees
         return $employee["id"];
     }
 
-    //получаю id посады по её названию(name)
+    //get the posad id by name (name)
     private function getIdPosition($name)
     {
         $sql = "SELECT id FROM positions WHERE name = ?";
@@ -52,7 +52,7 @@ class Employees
         return $positions['id'];
     }
 
-    // формирую запрос и при отсутсвии работника в базе добавляю его
+    //form a request and in the absence of an employee in the database add it
     public function addEmployee($_post)
     {
         if (!$this->checkAvailability($_post)) {
@@ -72,8 +72,8 @@ class Employees
         } else return "This is already there";
     }
 
-    /** из масива _post формирую строкусостоящую из елементов массива у которых не пустой ключь
-     * Результирующая строка имеет вид: some_column = some_value AND ....
+    /** from the _post array I form a string consisting of array elements that have a non-empty key
+     * The resulting string is: some_column = some_value AND ....
      */
     private function get_line_for_RowDelete_inDB($_post)
     {

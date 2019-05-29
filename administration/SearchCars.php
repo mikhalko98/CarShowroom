@@ -186,7 +186,7 @@ if (isset($_POST['search'])) {
                 $inf = $Cars->getCar($data);
                 foreach ($inf as $value) {
                     echo "<table>", "<tr>", "<td id = 'id_car'>", $value['id'], "</td>",
-                    "<td>", "<img src='../photo/photoCar.png', alt='Photo car'>", "</td>",
+                    "<td>", "<img src='../photo/2.1.jpg', alt='Photo car'>", "</td>",
                     "<td>", "<div class = 'dataCar'>",
                     "<div class = 'mark_model_year'>", "<h2>", $value['mark'], '  ', $value['model'], '  ', $value['yearOfIssue'], "</h2>", "</div>",
                     "<div class = 'price'>", "<p id = 'price'>", $value['price'], "$", "</p>", "</div>",
